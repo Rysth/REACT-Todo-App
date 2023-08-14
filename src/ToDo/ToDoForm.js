@@ -30,8 +30,6 @@ function ToDoForm() {
             placeholder="Add task..."
           />
         </label>
-      </div>
-      <div className="form-group">
         <button className="form-icon" type="submit">
           <i className="fa-solid fa-circle-plus" />
         </button>

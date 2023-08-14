@@ -26,12 +26,12 @@
 /* Form */
 
 .app-form {
-  margin: 1em 0;
+  margin: 1em 0 0 0;
   text-align: center;
-  position: relative;
 }
 
 .form-group {
+  position: relative;
   padding: 1em;
 }
 
@@ -57,4 +57,56 @@
   z-index: 100;
   border: none;
   background: none;
+  transition: color 0.15s;
+}
+
+.form-icon:hover {
+  color: var(--CL-primary);
+}
+
+/* List */
+
+.app-list {
+  list-style-type: none;
+  padding: 1em;
+  display: grid;
+  gap: 0.85em;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.25);
+  border-radius: 0.5em;
+  background-color: var(--CL-secondary);
+}
+
+.item-checkbox {
+  border: none;
+  outline: none;
+}
+
+.item-task {
+  font-size: 0.9rem;
+  width: 65%;
+  max-height: 1.5em;
+  overflow: auto;
+  color: var(--CL-neutral-white);
+}
+
+.item-button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--CL-neutral-white);
+  transition: color 0.15s;
+}
+
+.item-button:hover.edit {
+  color: greenyellow;
+}
+
+.item-button:hover.delete {
+  color: red;
 }
