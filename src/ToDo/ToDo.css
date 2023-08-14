@@ -28,14 +28,11 @@
 .app-form {
   margin: 1em 0;
   text-align: center;
+  position: relative;
 }
 
 .form-group {
   padding: 1em;
-}
-
-.form-label {
-  position: relative;
 }
 
 .form-input {
@@ -53,9 +50,11 @@
 
 .form-icon {
   position: absolute;
-  top: 0.72em;
-  right: 1em;
+  top: 1.45em;
+  right: 1.25em;
   font-size: 1.2rem;
   cursor: pointer;
   z-index: 100;
+  border: none;
+  background: none;
 }
