@@ -1,0 +1,24 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+:root {
+  --CL-primary: #2e3191;
+  --CL-secondary: #2a2977;
+
+  --FF-primary: 'Poppins', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--FF-primary);
+}
