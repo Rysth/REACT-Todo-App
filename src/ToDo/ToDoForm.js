@@ -14,6 +14,7 @@ function ToDoForm({ setItems }) {
         {
           id: prevItems.length,
           text: task,
+          completed: false,
         },
       ]);
 
