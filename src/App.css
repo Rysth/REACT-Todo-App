@@ -22,3 +22,8 @@ body {
   margin: 0;
   font-family: var(--FF-primary);
 }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
