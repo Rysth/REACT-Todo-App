@@ -3,10 +3,8 @@
 :root {
   --CL-primary: #2e3191;
   --CL-secondary: #2a2977;
-
-  --CL-neutral-white: #ffffff;
+  --CL-neutral-white: #fff;
   --CL-neutral-black: #000;
-
   --FF-primary: 'Poppins', sans-serif;
 }
 
