@@ -13,7 +13,7 @@ function ToDo() {
       <div className="container">
         <ToDoHeader />
         <ToDoForm setItems={setItems} />
-        <ToDoList items={items} />
+        <ToDoList items={items} setItems={setItems} />
       </div>
     </div>
   );
