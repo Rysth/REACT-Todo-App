@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-function ToDoForm() {
+function ToDoForm({ setItems }) {
   const [task, setTask] = useState('');
 
   const isEmpty = (string) => string === '';
@@ -8,6 +9,14 @@ function ToDoForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!isEmpty(task)) {
+      setItems((prevItems) => [
+        ...prevItems,
+        {
+          id: prevItems.length,
+          text: task,
+        },
+      ]);
+
       setTask('');
       e.target.reset();
     }
@@ -37,5 +46,13 @@ function ToDoForm() {
     </form>
   );
 }
+
+ToDoForm.defaultProps = {
+  setItems: () => {},
+};
+
+ToDoForm.propTypes = {
+  setItems: PropTypes.func,
+};
 
 export default ToDoForm;

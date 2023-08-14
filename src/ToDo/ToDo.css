@@ -71,6 +71,8 @@
   padding: 1em;
   display: grid;
   gap: 0.85em;
+  max-height: 30em;
+  overflow: auto;
 }
 
 .list-item {
