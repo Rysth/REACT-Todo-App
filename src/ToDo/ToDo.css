@@ -22,3 +22,40 @@
   font-size: 0.9rem;
   margin: 0;
 }
+
+/* Form */
+
+.app-form {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.form-group {
+  padding: 1em;
+}
+
+.form-label {
+  position: relative;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.25);
+}
+
+.form-input:focus {
+  outline: 2px solid var(--CL-secondary);
+}
+
+.form-icon {
+  position: absolute;
+  top: 0.72em;
+  right: 1em;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 100;
+}
