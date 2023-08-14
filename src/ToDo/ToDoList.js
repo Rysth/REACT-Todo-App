@@ -25,7 +25,9 @@ function ToDoList({ items, setItems }) {
     });
   };
 
-  useEffect(() => {}, [items]);
+  useEffect(() => {
+    localStorage.setItem('taskArray', JSON.stringify(items));
+  }, [items]);
 
   return (
     <ul className="app-list">

@@ -5,7 +5,9 @@ import ToDoList from './ToDoList';
 import './ToDo.css';
 
 function ToDo() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(
+    !JSON.parse(localStorage.getItem('taskArray')) ? [] : JSON.parse(localStorage.getItem('taskArray')),
+  );
 
   return (
     <div className="app">

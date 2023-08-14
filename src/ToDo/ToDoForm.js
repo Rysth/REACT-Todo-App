@@ -12,7 +12,7 @@ function ToDoForm({ setItems }) {
       setItems((prevItems) => [
         ...prevItems,
         {
-          id: prevItems.length,
+          id: `item-${Math.floor(Math.random() * 1000)}`,
           text: task,
           completed: false,
         },
