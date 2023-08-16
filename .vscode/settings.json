@@ -1,0 +1,7 @@
+{
+  "files.eol": "\n",
+  "prettier.bracketSameLine": true,
+  "prettier.printWidth": 120,
+  "prettier.trailingComma": "all",
+  "prettier.withNodeModules": true
+}
